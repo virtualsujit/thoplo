@@ -15,7 +15,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Branding
 
-All brand-specific values (company name, contact email, hiring email, address) live in
+All brand-specific values (company name, contact email, hiring email, phone/WhatsApp
+number, address) live in
 [`lib/site.ts`](lib/site.ts). This branch is otherwise identical to `main`, which serves
 the Thoplo site — keeping the difference in one file makes changes easy to port between them.
 
