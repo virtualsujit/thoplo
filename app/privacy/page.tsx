@@ -124,8 +124,10 @@ export default function Privacy() {
         <p>
           If you have questions about this policy or how we handle your
           information, contact us at{" "}
-          <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>, or
-          write to us at {site.address.line1}, {site.address.line3}.
+          <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>, call
+          or message us on WhatsApp at{" "}
+          <a href={`tel:${site.phone.tel}`}>{site.phone.display}</a>, or write to
+          us at {site.address.line1}, {site.address.line3}.
         </p>
       </section>
     </LegalPage>

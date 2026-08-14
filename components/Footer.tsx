@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Mail } from "lucide-react";
+import { MapPin, Mail, Phone, MessageCircle } from "lucide-react";
 import { site } from "@/lib/site";
 
 export default function Footer() {
@@ -39,6 +39,26 @@ export default function Footer() {
                   className="text-slate-400 text-sm hover:text-primary-400 transition-colors"
                 >
                   {site.contactEmail}
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="h-5 w-5 text-primary-400 flex-shrink-0" />
+                <a
+                  href={`tel:${site.phone.tel}`}
+                  className="text-slate-400 text-sm hover:text-primary-400 transition-colors"
+                >
+                  {site.phone.display}
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <MessageCircle className="h-5 w-5 text-primary-400 flex-shrink-0" />
+                <a
+                  href={`https://wa.me/${site.phone.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-400 text-sm hover:text-primary-400 transition-colors"
+                >
+                  WhatsApp available on {site.phone.display}
                 </a>
               </div>
             </div>

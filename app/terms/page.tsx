@@ -139,7 +139,9 @@ export default function Terms() {
         <h2>Contact Us</h2>
         <p>
           Questions about these Terms can be sent to{" "}
-          <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.
+          <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or
+          raised by phone/WhatsApp at{" "}
+          <a href={`tel:${site.phone.tel}`}>{site.phone.display}</a>.
         </p>
       </section>
     </LegalPage>
