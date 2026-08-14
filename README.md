@@ -2,47 +2,36 @@
 
 A clean and minimalist landing page for Thoplo - a company providing Software Development, Marketing, and Selling Services.
 
-## Tech Stack
-
-- **Framework:** Next.js 14 (App Router)
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide React
-- **Language:** TypeScript
+Deployed on Vercel at [thoplo.com](https://thoplo.com).
 
 ## Getting Started
 
-First, install the dependencies:
-
 ```bash
 npm install
-```
-
-Then, run the development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Project Structure
+## Branding
+
+All brand-specific values (company name, contact email, hiring email, address) live in
+[`lib/site.ts`](lib/site.ts). The `sabthok` branch serves sabthok.com.np from an identical
+codebase and differs only in that file — keeping the difference in one place makes changes
+easy to port between the two sites.
+
+## Structure
 
 ```
-thoplo/
-├── app/
-│   ├── globals.css      # Global styles with Tailwind
-│   ├── layout.tsx       # Root layout with metadata
-│   └── page.tsx         # Main landing page
-├── components/
-│   ├── Navbar.tsx       # Navigation component
-│   └── Footer.tsx       # Footer component
-└── ...config files
+app/
+  layout.tsx       root layout + metadata
+  page.tsx         landing page (hero, services, careers)
+  privacy/page.tsx Privacy Policy
+  terms/page.tsx   Terms of Service
+components/
+  Navbar.tsx
+  Footer.tsx
+  LegalPage.tsx    shared shell for legal pages
+lib/
+  site.ts          brand configuration
 ```
-
-## Features
-
-- Responsive design (mobile-friendly)
-- Smooth scroll navigation
-- Clean, minimalist aesthetic
-- Professional typography
-- Modern color palette (slate/gray with sky blue accent)

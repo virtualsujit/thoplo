@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Code2, Megaphone, ShoppingBag, ArrowRight } from "lucide-react";
+import { site } from "@/lib/site";
 
 const services = [
   {
@@ -37,7 +38,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-tight">
               Welcome to{" "}
-              <span className="text-primary-600">Thoplo</span>
+              <span className="text-primary-600">{site.name}</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed">
               We empower businesses to reach their full potential through
@@ -118,10 +119,10 @@ export default function Home() {
                 If you are interested in joining us, send your CV and cover
                 letter to{" "}
                 <a
-                  href="mailto:hire@thoplo.com"
+                  href={`mailto:${site.hiringEmail}`}
                   className="text-primary-600 font-semibold hover:text-primary-700 underline underline-offset-2 transition-colors"
                 >
-                  hire@thoplo.com
+                  {site.hiringEmail}
                 </a>
               </p>
             </div>
