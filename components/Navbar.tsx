@@ -3,11 +3,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { site } from "@/lib/site";
 
 const navLinks = [
-  { name: "HOME", href: "#home" },
-  { name: "CAREERS", href: "#careers" },
-  { name: "CONTACTS", href: "#contact" },
+  { name: "HOME", href: "/#home" },
+  { name: "CAREERS", href: "/#careers" },
+  { name: "CONTACTS", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -19,10 +20,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
-            href="#home"
+            href="/#home"
             className="text-2xl font-bold text-slate-900 tracking-tight"
           >
-            Thoplo
+            {site.name}
           </Link>
 
           {/* Desktop Navigation */}

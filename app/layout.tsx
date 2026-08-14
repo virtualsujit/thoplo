@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { site } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Thoplo - Software Development, Marketing & Selling Services",
+  title: `${site.name} - Software Development, Marketing & Selling Services`,
   description:
-    "Thoplo provides expert software development, marketing, and selling services to help your business grow and succeed.",
+    `${site.name} provides expert software development, marketing, and selling services to help your business grow and succeed.`,
 };
 
 export default function RootLayout({
